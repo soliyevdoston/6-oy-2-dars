@@ -1,4 +1,3 @@
-/* ====== FONTLAR ====== */
 @font-face {
   font-family: "Inter 18pt";
   src: url("./fonts/Inter18pt-Medium.woff2") format("woff2"),
@@ -26,7 +25,6 @@
   font-display: swap;
 }
 
-/* ====== RANG O‘ZGARUVCHILAR ====== */
 :root {
   --color-b: #2bd0d0;
   --color-green-hover: #2acfcf;
@@ -40,7 +38,6 @@
   --color-hover-link: #2d0ce9;
 }
 
-/* ====== RESET VA ASOSIY STIL ====== */
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +81,6 @@ img {
   padding: 0 16px;
 }
 
-/* ====== BUTTONLAR ====== */
 button {
   border: none;
   outline: none;
@@ -112,7 +108,6 @@ button:hover {
   background-color: var(--color-green-hover);
 }
 
-/* ====== MATN ELEMENTLARI ====== */
 h1,
 h2,
 h3,
@@ -124,7 +119,6 @@ p {
   color: var(--color-dark);
 }
 
-/* ====== RESPONSIVE ====== */
 @media (max-width: 1100px) {
   .container {
     padding: 0 10px;
@@ -137,7 +131,6 @@ p {
   }
 }
 
-/* ====== SCROLL ====== */
 ::-webkit-scrollbar {
   width: 8px;
 }
