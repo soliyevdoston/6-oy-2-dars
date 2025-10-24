@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerDiv}>
-          <ul className={styles.footerUl}>
+          <ul className={styles.footerUl1}>
             <li>
               <a className={styles.footerLi1} href="#">
                 Features
