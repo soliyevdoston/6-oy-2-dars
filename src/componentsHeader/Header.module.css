@@ -61,6 +61,8 @@
 
 .headerSing {
   font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 .group img {
@@ -73,13 +75,13 @@
   opacity: 0.8;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 9920px) {
   .header {
     gap: 1rem;
   }
 
   .headerUl {
-    display: none;
+    display: flex;
   }
 
   .login {
@@ -117,7 +119,8 @@
   }
 
   .group img {
-    display: block;
+    display: none;
+
     width: 40px;
   }
 }
