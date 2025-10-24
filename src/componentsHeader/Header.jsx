@@ -1,72 +1,52 @@
 import React from "react";
+import shortlyimg from "../assets/Shortly.svg";
+import group from "../assets/Group.svg";
+import styles from "../componentsHeader/Header.module.css";
 
 export default function Header() {
   return (
-    <div>
-      <header className="header container">
-        <div className="header-menyu">
-          <img
-            className="header-logo"
-            src="/image/Shortly.svg"
-            alt="Shortly logo"
-          />
+    <header className={`${styles.header} container`}>
+      <div className={styles.headerMenyu}>
+        <img
+          className={styles.headerLogo}
+          src={shortlyimg}
+          alt="Shortly logo"
+        />
 
-          <nav>
-            <ul className="header-ul">
-              <li
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                <a className="header-a" href="#">
-                  Features
-                </a>
-              </li>
+        <nav>
+          <ul className={styles.headerUl}>
+            <li>
+              <a className={styles.headerA} href="#">
+                Features
+              </a>
+            </li>
+            <li>
+              <a className={styles.headerA} href="#">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a className={styles.headerA} href="#">
+                Resources
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-              <li
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="2000"
-              >
-                <a className="header-a" href="#">
-                  Pricing
-                </a>
-              </li>
+      <div className={styles.login}>
+        <a className={styles.headerA} href="#">
+          Login
+        </a>
 
-              <li
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="2500"
-              >
-                <a className="header-a" href="#">
-                  Resources
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <a className={styles.headerBtn} href="#" role="button">
+          <span className={styles.headerSing}>Sign up</span>
+        </a>
+      </div>
 
-        <div className="login">
-          <a className="header-a" href="#">
-            Login
-          </a>
-
-          <a
-            className="header-btn"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500"
-            href="#"
-            role="button"
-          >
-            <span className="header-sing">Sing up</span>
-          </a>
-        </div>
-
-        <div className="group">
-          <img src="/image/Group.svg" alt="decorative group" />
-        </div>
-      </header>
-    </div>
+      <div className={styles.group}>
+        <img src={group} alt="decorative group" />
+      </div>
+    </header>
   );
 }

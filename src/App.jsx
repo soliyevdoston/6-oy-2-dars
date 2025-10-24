@@ -9,10 +9,10 @@ export default function App() {
   return (
     <div>
       <Header></Header>
-      <Footer></Footer>
       <Hero></Hero>
       <Card1></Card1>
       <Card2></Card2>
+      <Footer></Footer>
     </div>
   );
 }

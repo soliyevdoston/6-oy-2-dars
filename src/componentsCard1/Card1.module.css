@@ -1,0 +1,155 @@
+.advan {
+  background-color: var(--color-light-gray);
+  margin-top: 104px;
+}
+
+.advanced {
+  padding-top: 204px;
+}
+
+.advancedSta {
+  text-align: center;
+}
+
+.advancedStaH2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-dark);
+}
+
+.advancedStaP {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+  color: var(--color-gray);
+}
+
+.advancedWrap {
+  position: relative;
+}
+
+.advancedMenyu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 44px;
+}
+
+.line {
+  width: 800px;
+  height: 8px;
+  background-color: var(--color-b);
+  position: absolute;
+  top: 250px;
+  z-index: 0;
+}
+
+.section1,
+.section2,
+.section3 {
+  background-color: #fff;
+  height: 267px;
+  position: relative;
+  z-index: 1;
+  padding: 32px;
+}
+
+.section1 {
+  margin-top: 44px;
+}
+.section2 {
+  margin-top: 88px;
+}
+.section3 {
+  margin-top: 132px;
+  margin-bottom: 120px;
+}
+
+.section1Img,
+.section2Img,
+.section3Img {
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-dark-purple);
+  border-radius: 50%;
+  position: relative;
+  top: -44px;
+}
+
+.section1Img img,
+.section2Img img,
+.section3Img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sectionH4 {
+  color: var(--color-dark);
+}
+
+.sectionP {
+  color: var(--color-gray);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+@media (max-width: 890px) {
+  .advancedMenyu,
+  .advancedWrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .advancedMenyu {
+    width: 350px;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .advanced {
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .advanced {
+    padding-top: 50px;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    max-width: 350px;
+    padding: 5px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  .sectionP {
+    max-width: 300px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section1,
+  .section2,
+  .section3 {
+    max-width: 300px;
+    width: 300px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .sectionP {
+    font-size: 14px;
+    width: 320px;
+  }
+}

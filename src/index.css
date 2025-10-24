@@ -1,0 +1,152 @@
+/* ====== FONTLAR ====== */
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("./fonts/Inter18pt-Medium.woff2") format("woff2"),
+    url("./fonts/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("./fonts/Inter18pt-Regular.woff2") format("woff2"),
+    url("./fonts/Inter18pt-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 24pt";
+  src: url("./fonts/Inter24pt-Bold.woff2") format("woff2"),
+    url("./fonts/Inter24pt-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====== RANG O‘ZGARUVCHILAR ====== */
+:root {
+  --color-b: #2bd0d0;
+  --color-green-hover: #2acfcf;
+  --color-dark: #34313d;
+  --color-gray: #9e9aa8;
+  --color-light-gray: #eff1f7;
+  --color-footer-bg: #232127;
+  --color-white: #ffffff;
+  --color-dark-purple: #3a3054;
+  --color-light-text: #bfbfbf;
+  --color-hover-link: #2d0ce9;
+}
+
+/* ====== RESET VA ASOSIY STIL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-hover-link);
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1108px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ====== BUTTONLAR ====== */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.header-btn,
+.hero-btn,
+.advan-boost-btn {
+  background-color: var(--color-b);
+  border-radius: 28px;
+  color: var(--color-white);
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover,
+.hero-btn:hover,
+.advan-boost-btn:hover {
+  background-color: var(--color-green-hover);
+}
+
+/* ====== MATN ELEMENTLARI ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Inter", sans-serif;
+  color: var(--color-dark);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* ====== SCROLL ====== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-b);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-gray);
+}

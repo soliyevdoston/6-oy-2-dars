@@ -1,0 +1,59 @@
+:root {
+  --color-b: #2bd0d0;
+  --color-dark-purple: #3a3054;
+  --color-white: #ffffff;
+}
+
+.ctaSection {
+  background-image: url("../assets/Path 2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advanBoost {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-white);
+  padding-top: 57px;
+  text-align: center;
+}
+
+.advanBoostBtn {
+  width: 197px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  background-color: var(--color-b);
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.advanBoostBtn:hover {
+  background-color: var(--color-dark-purple);
+}
+
+.heroBtnA {
+  color: #f3eeee;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .advanBoost {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
