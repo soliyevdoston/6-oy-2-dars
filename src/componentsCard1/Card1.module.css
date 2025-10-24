@@ -27,7 +27,11 @@
 }
 
 .advancedWrap {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .advancedMenyu {
@@ -42,7 +46,7 @@
   height: 8px;
   background-color: var(--color-b);
   position: absolute;
-  top: 250px;
+  top: 1400px;
   z-index: 0;
 }
 
@@ -98,6 +102,19 @@
   line-height: 26px;
 }
 
+@media (max-width: 1100px) {
+  .line {
+    margin-top: 290px;
+  }
+  .advancedWrap {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1059px) {
+  .line {
+    display: none;
+  }
+}
 @media (max-width: 890px) {
   .advancedMenyu,
   .advancedWrap {
